@@ -2,7 +2,7 @@ from crewai import Agent
 from LLMs import planner_model
 from tools import wikipedia_tool
 
-planner = Agent(
+planner_agent = Agent(
     role="Research Strategy Planner",
     goal="Transform the research objective into a structured investigation roadmap by identifying subtopics, key focus areas, and logical research steps.",
     backstory="You are a strategic thinker skilled in designing investigation plans."

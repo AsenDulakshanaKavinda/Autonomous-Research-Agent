@@ -2,7 +2,7 @@ from crewai import Agent
 from LLMs import research_model
 from tools import wikipedia_tool
 
-researcher = Agent(
+researcher_agent = Agent(
     role="Information Research Specialist",
     goal="Gather accurate, relevant, and diverse information from available knowledge sources to support the research plan.",
     backstory="You are a skilled researcher with deep experience in discovering reliable information."

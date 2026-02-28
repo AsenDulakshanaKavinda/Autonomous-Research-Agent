@@ -1,5 +1,7 @@
+from workflows.research_flow import result
+
 def main():
-    print("Hello from autonomous-research-agent!")
+    result()
 
 
 if __name__ == "__main__":
