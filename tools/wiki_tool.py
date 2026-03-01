@@ -24,4 +24,4 @@ class WikipediaSearchTool(BaseTool):
         except Exception as e:
             return f"an error occurred: {str(e)}."
 
-wikipedia_tool = WikipediaSearchTool()
+wikipedia_search_tool = WikipediaSearchTool()

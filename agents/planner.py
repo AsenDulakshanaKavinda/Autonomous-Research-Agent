@@ -1,6 +1,5 @@
 from crewai import Agent
 from LLMs import planner_model
-from tools import wikipedia_tool
 
 planner_agent = Agent(
     role="Research Strategy Planner",

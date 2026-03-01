@@ -9,8 +9,9 @@ crew = Crew(
 )
 
 def result():
+    topic = "attention is all you need transformer"
     crew_output = crew.kickoff(
-        inputs={"topic": "Myocardial infarction"}
+        inputs={"topic": topic}
     )
 
     print(crew_output)

@@ -8,7 +8,7 @@ import urllib.parse
 class ArxivSearchInput(BaseModel):
     """ Input schema for ArxivSearchTool """
     query: str = Field(..., description="search topic for arXive papers")
-    max_result: int = Field(default=3, description="Number of results to fetch")
+    max_results: int = Field(default=3, description="Number of results to fetch")
 
 class ArxivSearchTool(BaseTool):
     name: str = "ArXive Research search tool"
@@ -30,4 +30,4 @@ class ArxivSearchTool(BaseTool):
             return f"Error fetching arXiv data: {str(e)}"
 
 
-arxiv_tool = ArxivSearchTool()
+arxiv_search_tool = ArxivSearchTool()
