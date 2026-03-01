@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "crewai[tools]>=1.10.0",
+    "feedparser>=6.0.12",
     "litellm>=1.81.16",
     "wikipedia>=1.4.0",
 ]
