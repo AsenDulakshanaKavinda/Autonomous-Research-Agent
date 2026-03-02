@@ -1,0 +1,46 @@
+director_task:
+  description: >
+    Conduct a thorough research about {topic}.
+    Make sure you create a clear research objective statement that describes what needs to be investigated.
+  expected_output: >
+    A clear research objective statement that describes what needs to be investigated for planner AI agent.
+  agent: director_agent
+
+
+create_research_plan:
+  description: >
+    Break down the research objective into subtopics and create a structured investigation roadmap.
+  expected_output: >
+    A step-by-step research plan listing key areas that must be explored for the research agent.
+  agent: planner_agent
+
+
+gather_information:
+  description: >
+    Collect relevant information, facts, and knowledge related to the research plan from available sources.
+  expected_output: >
+    A summarized collection of key findings and supporting information.
+  agent: researcher_agent
+
+
+analyst_findings:
+  description: >
+    Analyze gathered information to extract insights, trends, opportunities, and potential risks.
+  expected_output: >
+    A set of meaningful insights derived from the research findings.
+  agent: analyst_agent
+
+
+writer_report:
+  description: >
+    Create a structured research report based on the analyzed insights.
+  expected_output: >
+    A final research report including
+            - Executive Summary
+            - Key insights
+            - Trends
+            - Opportunities
+            - Risks
+            - Future Outlook
+  agent: writer_agent
+
